@@ -1,0 +1,16 @@
+C:\Users\ferna\Documents\C#\Projeto01\bin\Debug\net5.0\Projeto01.exe
+C:\Users\ferna\Documents\C#\Projeto01\bin\Debug\net5.0\Projeto01.deps.json
+C:\Users\ferna\Documents\C#\Projeto01\bin\Debug\net5.0\Projeto01.runtimeconfig.json
+C:\Users\ferna\Documents\C#\Projeto01\bin\Debug\net5.0\Projeto01.runtimeconfig.dev.json
+C:\Users\ferna\Documents\C#\Projeto01\bin\Debug\net5.0\Projeto01.dll
+C:\Users\ferna\Documents\C#\Projeto01\bin\Debug\net5.0\ref\Projeto01.dll
+C:\Users\ferna\Documents\C#\Projeto01\bin\Debug\net5.0\Projeto01.pdb
+C:\Users\ferna\Documents\C#\Projeto01\obj\Debug\net5.0\Projeto01.csproj.AssemblyReference.cache
+C:\Users\ferna\Documents\C#\Projeto01\obj\Debug\net5.0\Projeto01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferna\Documents\C#\Projeto01\obj\Debug\net5.0\Projeto01.AssemblyInfoInputs.cache
+C:\Users\ferna\Documents\C#\Projeto01\obj\Debug\net5.0\Projeto01.AssemblyInfo.cs
+C:\Users\ferna\Documents\C#\Projeto01\obj\Debug\net5.0\Projeto01.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Documents\C#\Projeto01\obj\Debug\net5.0\Projeto01.dll
+C:\Users\ferna\Documents\C#\Projeto01\obj\Debug\net5.0\ref\Projeto01.dll
+C:\Users\ferna\Documents\C#\Projeto01\obj\Debug\net5.0\Projeto01.pdb
+C:\Users\ferna\Documents\C#\Projeto01\obj\Debug\net5.0\Projeto01.genruntimeconfig.cache
