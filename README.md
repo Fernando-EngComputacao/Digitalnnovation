@@ -1,1 +1,1 @@
-"# C¢digo-fonte de Cursos de Programaá∆o" 
+# C√≥digo-fonte de Cursos de Programa√ß√£o
