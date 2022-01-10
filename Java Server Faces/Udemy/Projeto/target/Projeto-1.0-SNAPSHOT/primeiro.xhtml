@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <ui:composition template="/estrutura.xhtml">
+        <ui:define name="centro">
+            <ui:define name="titulo">
+                Minha primeira página JSF ... agora com Facelets Templates
+            </ui:define>
+            <h1>Meu primeiro JSF</h1>
+
+            Sabe o que o Bean tem a dizer? <br/>
+            <h:outputText value="#{meuPrimeiroBean.ola}" rendered="#{meuPrimeiroBean.exibir}" escape="true"/> 
+
+            <h:form>
+                A exibir o que o Bean tem a dizer:  
+                <h:selectBooleanCheckbox value="#{meuPrimeiroBean.exibir}"/> 
+                <h:commandButton value="Enviar"/>
+            </h:form> <br/>
+
+            Link para a Alura:
+            <h:outputLink value="https://www.alura.com.br">Cursos de Java na Alura </h:outputLink> <br/>
+
+            Usando a tag LINK:
+            <h:link outcome="index.jsf" value="Cadastro de Pessoas"></h:link>
+        </ui:define>
+    </ui:composition>
+</html>
