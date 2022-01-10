@@ -5,5 +5,5 @@
 
 
 ##### Curso em vídeo: https://www.cursoemvideo.com
-##### Digital Innovation: https://www.dio.me/
-<a href=“http://exemplo.com/“>Teste</a>
+##### : 
+<a href=“https://www.dio.me/“>Digital Innovation One</a>
