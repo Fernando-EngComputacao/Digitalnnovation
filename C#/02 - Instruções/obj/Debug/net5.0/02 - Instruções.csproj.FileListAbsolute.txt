@@ -1,0 +1,16 @@
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\bin\Debug\net5.0\02 - Instruções.exe
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\bin\Debug\net5.0\02 - Instruções.deps.json
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\bin\Debug\net5.0\02 - Instruções.runtimeconfig.json
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\bin\Debug\net5.0\02 - Instruções.runtimeconfig.dev.json
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\bin\Debug\net5.0\02 - Instruções.dll
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\bin\Debug\net5.0\ref\02 - Instruções.dll
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\bin\Debug\net5.0\02 - Instruções.pdb
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\obj\Debug\net5.0\02 - Instruções.csproj.AssemblyReference.cache
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\obj\Debug\net5.0\02 - Instruções.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\obj\Debug\net5.0\02 - Instruções.AssemblyInfoInputs.cache
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\obj\Debug\net5.0\02 - Instruções.AssemblyInfo.cs
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\obj\Debug\net5.0\02 - Instruções.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\obj\Debug\net5.0\02 - Instruções.dll
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\obj\Debug\net5.0\ref\02 - Instruções.dll
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\obj\Debug\net5.0\02 - Instruções.pdb
+C:\Users\ferna\Documents\C#\C#\02 - Instruções\obj\Debug\net5.0\02 - Instruções.genruntimeconfig.cache
