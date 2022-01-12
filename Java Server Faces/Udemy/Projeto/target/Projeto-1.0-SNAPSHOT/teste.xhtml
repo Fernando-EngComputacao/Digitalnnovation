@@ -49,19 +49,17 @@
             <h:panelGrid columns="3">  
                 <f:facet name="header">Dados Principais</f:facet>
                 <h:outputLabel for="nome" value="Nome"/> 
-                <h:inputText id="nome" value="#{cadastroPessoasBean.pessoaSelecionada.nome}" valueChangeListener="#{cadastroPessoasBean.ouvinteAjax}">
-                    <f:ajax event="keyup" listener="#{cadastroPessoasBean.ouvinteAjax}"/>
+                <h:inputText id="nome" value="#{cadastroPessoasBean.pessoaSelecionada.nome}"><!--valueChangeListener="#{cadastroPessoasBean.ouvinteAjax}"-->
+                    <f:ajax event="keyup"/> <!-- immediate="true" listener="#{cadastroPessoasBean.ouvinteAjax}"/-->
                 </h:inputText>
                 <h:message for="nome" styleClass="Insira um nome"/>
 
-                <h:outputLabel for="email" value="E-mail">
-                    <f:ajax event="keyup"/>
-                </h:outputLabel>
+                <h:outputLabel for="email" value="E-mail"/>
                 <h:inputText id="email" value="#{cadastroPessoasBean.pessoaSelecionada.email}" validatorMessage="E-mail Inválido!">
                     <f:validateRegex pattern=".+@.+"/>
-                    <f:ajax event="keyup"/>
+                    <f:ajax render="msgEmail :idFormTable:idTable" execute="@this"/>
                 </h:inputText>
-                <h:message for="email" styleClass="erro"/>
+                <h:message for="email" id="msgEmail" styleClass="erro"/>
 
                 <h:outputLabel for="telefone" value="Telefone"/>
                 <h:inputText id="telefone" value="#{cadastroPessoasBean.pessoaSelecionada.telefone}" validatorMessage="Insira um telefone">
@@ -130,8 +128,8 @@
             <h:outputLabel value="Cancelar" styleClass="idSalvarCancelar"/>
         </h:form>
 
-        <h:form>
-            <h:graphicImage name="corejur.png" library="imagens"/>
+        <h:form id="idFormTable">
+            <h:graphicImage id="idTable" name="corejur.png" library="imagens"/>
             <h2>Lista de Pessoas Cadastradas</h2>
 
             <h:dataTable value="#{cadastroPessoasBean.lista}" var="p" rowClasses="linha, linha2">
