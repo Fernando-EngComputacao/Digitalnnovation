@@ -11,10 +11,10 @@
     <ui:define name="direita">
         <h:messages infoClass="info" errorClass="erro" warnClass="warn" fatalClass="fatal"/>
     </ui:define>
-    
+
     <ui:define name="centro">
         <h1>Pessoas Cadastradas</h1>
-        
+
         <h:form>
             <h:panelGrid columns="3">
                 #{mens.escolha}
@@ -31,8 +31,8 @@
             <f:param value="#{cadastroPessoasBean.pessoaSelecionada.nome}" />
         </h:outputFormat><!-- comment -->
         <!--h:panelGrid columns="3">
-            #{mens.es}
-        </h:panelGrid-->
+        #{mens.es}
+    </h:panelGrid-->
 
         <h:form rendered="#{empty cadastroPessoasBean.tipoNovaPessoa}">
             <h:panelGrid id="gridTipoPessoa" columns="4">
@@ -49,25 +49,33 @@
             <h:panelGrid columns="3">  
                 <f:facet name="header">Dados Principais</f:facet>
                 <h:outputLabel for="nome" value="Nome"/> 
-                <h:inputText id="nome" value="#{cadastroPessoasBean.pessoaSelecionada.nome}"/>
+                <h:inputText id="nome" value="#{cadastroPessoasBean.pessoaSelecionada.nome}" valueChangeListener="#{cadastroPessoasBean.ouvinteAjax}">
+                    <f:ajax event="keyup" listener="#{cadastroPessoasBean.ouvinteAjax}"/>
+                </h:inputText>
                 <h:message for="nome" styleClass="Insira um nome"/>
 
-                <h:outputLabel for="email" value="E-mail"/>
+                <h:outputLabel for="email" value="E-mail">
+                    <f:ajax event="keyup"/>
+                </h:outputLabel>
                 <h:inputText id="email" value="#{cadastroPessoasBean.pessoaSelecionada.email}" validatorMessage="E-mail Inválido!">
                     <f:validateRegex pattern=".+@.+"/>
+                    <f:ajax event="keyup"/>
                 </h:inputText>
                 <h:message for="email" styleClass="erro"/>
 
                 <h:outputLabel for="telefone" value="Telefone"/>
                 <h:inputText id="telefone" value="#{cadastroPessoasBean.pessoaSelecionada.telefone}" validatorMessage="Insira um telefone">
                     <f:validateRegex pattern=".+"/>
+                    <f:ajax event="keyup"/>
                 </h:inputText>
                 <h:message for="telefone" styleClass="erro"/>
             </h:panelGrid>
 
             <h:panelGrid columns="3" id="gridPessoaFisica" rendered="#{cadastroPessoasBean.pessoaFisicaSelecionada}">
                 <h:outputLabel value="Rg" for="rg"/>
-                <h:inputText id="rg" value="#{cadastroPessoasBean.pessoaSelecionada.rg}"/>
+                <h:inputText id="rg" value="#{cadastroPessoasBean.pessoaSelecionada.rg}">
+                    <f:ajax event="keyup"/>
+                </h:inputText>
                 <h:message for="rg" styleClass="erro"/>
 
                 <f:facet name="header">Dados de Pessoa Física</f:facet>
@@ -75,18 +83,21 @@
                 <h:inputText id="cpf" value="#{cadastroPessoasBean.pessoaSelecionada.cpf}" validatorMessage="CPF Inválido!">
                     <f:validateRegex pattern="\d{3}(\.\d{3}){2}-\d{2}"/>
                     <f:validator validatorId="idValidadorCPF"/>
+                    <f:ajax event="keyup"/>
                 </h:inputText>
                 <h:message for="cpf" styleClass="erro"/>
 
                 <h:outputLabel for="dataNasc" value="Data de Nascimento"/> 
                 <h:inputText id="dataNasc" value="#{cadastroPessoasBean.pessoaSelecionada.dataNasc}" validatorMessage="Máscara da data dd/mm/aaaa">
                     <f:convertDateTime pattern="dd/MM/yyyy"/>
+                    <f:ajax event="keyup"/>
                 </h:inputText> 
                 <h:message for="dataNasc"/>
 
                 <h:outputLabel for="sexo" value="Sexo"/>
                 <h:selectOneRadio id="sexo" value="#{cadastroPessoasBean.pessoaSelecionada.sexo}">
                     <f:selectItems value="#{cadastroPessoasBean.sexo}" var="sex" itemLabel="#{sex.nome}"/>
+                    <f:ajax event="keyup"/>
                 </h:selectOneRadio>
                 <h:message for="sexo" styleClass="erro"/>
             </h:panelGrid>
@@ -112,8 +123,11 @@
                 <h:message for="inscricaoMunicipal" styleClass="erro"/>
             </h:panelGrid>
 
-            <h:commandButton styleClass="enviar" action="#{cadastroPessoasBean.salvar}" image="#{resource['imagens:enviar.png']}"/> &nbsp; &nbsp;
-            <h:commandButton styleClass="enviar" action="#{cadastroPessoasBean.cancelar}" image="#{resource['imagens:cancelar.png']}" immediate="true"/><br/><br/><br/>
+            <h:commandButton styleClass="enviar" action="#{cadastroPessoasBean.salvar}" image="#{resource['imagens:enviar.png']}"></h:commandButton> 
+            <h:outputLabel value="Salvar" styleClass="idSalvarCancelar"/> &nbsp; &nbsp;
+
+            <h:commandButton styleClass="enviar" action="#{cadastroPessoasBean.cancelar}" image="#{resource['imagens:cancelar.png']}" immediate="true"/>
+            <h:outputLabel value="Cancelar" styleClass="idSalvarCancelar"/>
         </h:form>
 
         <h:form>
@@ -122,11 +136,11 @@
 
             <h:dataTable value="#{cadastroPessoasBean.lista}" var="p" rowClasses="linha, linha2">
                 <fer:coluna nome="Nome" valor="#{p.nome}" escapar="true"/>
-                
+
                 <fer:coluna nome="E-mail" valor="#{p.email}" escapar="true"/>
-                
+
                 <fer:coluna nome="Telefone" valor="#{p.telefone}" escapar="true"/>
-                
+
                 <h:column>
                     <f:facet name="header">Ações</f:facet>
                     <core:editarExcluir alvo="#{cadastroPessoasBean.pessoaSelecionada}" 

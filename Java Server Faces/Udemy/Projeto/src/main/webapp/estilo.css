@@ -6,8 +6,8 @@ body, div {
 }
 
 body {
-    background-image: url(resources/imagens/hotel.jpg);
-    background-repeat: no-repeat;
+    background-image: url(resources/imagens/imgHotel.png);
+    background-repeat: repeat;
     background-attachment: fixed;
     width: 100%;
 }
@@ -146,3 +146,7 @@ tr.linha2 > td {
     font-weight: bold;
 }
 
+#idSalvarCancelar {
+    color: #F00;
+    margin: 5% 15% 0% 0%;
+}

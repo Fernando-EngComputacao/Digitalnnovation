@@ -2,9 +2,12 @@ package beans;
 
 import java.io.Serializable;
 import java.util.*;
+import java.util.logging.Logger;
 import javax.faces.application.FacesMessage;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.faces.event.AjaxBehaviorEvent;
+import javax.faces.event.ValueChangeEvent;
 import javax.inject.Named;
 
 import modelo.Pessoa;
@@ -118,5 +121,13 @@ public class CadastroPessoasBean implements Serializable{
     
     public boolean isPessoaJuridicaSelecionada(){
         return pessoaSelecionada instanceof PessoaJuridica;
+    }
+    
+    public void ouvinteAjax(AjaxBehaviorEvent event){
+        Logger.getLogger(Logger.GLOBAL_LOGGER_NAME).info("AJAX" + event.getPhaseId());
+    }
+    
+    public void ouvinetAjax(ValueChangeEvent event){
+        Logger.getLogger(Logger.GLOBAL_LOGGER_NAME).info("AJAX VALUE CHANGE" + event.getPhaseId());
     }
 }
