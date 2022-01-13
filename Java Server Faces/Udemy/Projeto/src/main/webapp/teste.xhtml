@@ -7,6 +7,7 @@
                 xmlns:fer="http://www.corejur.com.br/facelets/taglibs"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:core="http://java.sun.com/jsf/composite/componentes">
+    <script src="resources/javascript/script.js"/>
 
     <ui:define name="direita">
         <h:messages infoClass="info" errorClass="erro" warnClass="warn" fatalClass="fatal"/>
@@ -57,7 +58,8 @@
                 <h:outputLabel for="email" value="E-mail"/>
                 <h:inputText id="email" value="#{cadastroPessoasBean.pessoaSelecionada.email}" validatorMessage="E-mail Inválido!">
                     <f:validateRegex pattern=".+@.+"/>
-                    <f:ajax render="msgEmail :idFormTable:idTable" execute="@this"/>
+                    <f:ajax event="keyup" render="msgEmail :idFormTable:idTable" execute="@this"/>
+                            <!--onerror="funcaoErro" onevent="funcaoErro"/-->
                 </h:inputText>
                 <h:message for="email" id="msgEmail" styleClass="erro"/>
 
@@ -128,7 +130,7 @@
             <h:outputLabel value="Cancelar" styleClass="idSalvarCancelar"/>
         </h:form>
 
-        <h:form id="idFormTable">
+        <h:form id="idFormTable" prependId="false">
             <h:graphicImage id="idTable" name="corejur.png" library="imagens"/>
             <h2>Lista de Pessoas Cadastradas</h2>
 
