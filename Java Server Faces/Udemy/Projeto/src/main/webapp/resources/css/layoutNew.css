@@ -18,8 +18,8 @@ body {
     width: 2.2%;
 }
 
-img {
-    margin: 10px;
+#logo {
+	margin: 10px;
 }
 
 #topo {
@@ -148,7 +148,16 @@ tr.linha2 > td {
     font-weight: bold;
 }
 
-#idSalvarCancelar {
-    color: #F00;
-    margin: 5% 15% 0% 0%;
+#primefaces {
+	position:absolute;
+	width: 70%;
+}
+
+#idPrimeFaces {
+    position: absolute;
+    width: 75%;
+}
+
+#richfaces {
+	width: 70%;
 }
