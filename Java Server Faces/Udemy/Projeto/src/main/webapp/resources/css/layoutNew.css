@@ -161,3 +161,8 @@ tr.linha2 > td {
 #richfaces {
 	width: 70%;
 }
+
+#idImagePrimeFaces, #idImgPrimeFaces {
+    width: 25px;
+    height: 25px;
+}

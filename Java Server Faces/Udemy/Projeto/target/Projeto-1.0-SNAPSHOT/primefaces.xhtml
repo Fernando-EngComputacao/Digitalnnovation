@@ -7,31 +7,59 @@
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui">
 
+    <ui:define name="direita">
+        <p:growl showDetail="true" id="mensagens"/>
+    </ui:define>
     <ui:define name="centro">
         <ui:param name="titulo" value="Exemplos PrimeFaces"/>
-        
+
         <h:form prependId="false">
-            <p:panel header="Painel PrimeFaces" id="primefaces">
-                <p:panelGrid columns="2">
-                    <h:outputLabel for="nome" value="Nome: "/>
-                    <p:keyboard id="nome"/> 
-                    
-                    <h:outputLabel for="senha" value="Senha: "/>
-                    <p:password feedback="true"
-                    promptLabel="Insira a sua senha" weakLabel="Fraca"
-                    goodLabel="Boa" strongLabel="Forte"/>
-                    
-                    <h:outputLabel for="data" value="Data: "/>
-                    <p:calendar id="data" locale="#{geralBean.locale}" 
-                                pages="2" showOn="focus"
-                                placeholder="dd/mm/aaaa"
-                                navigator="true"
-                                mask="aa/aa/aaaa"
-                                showOtherMonths="true"/>
-                    
-                </p:panelGrid>
-            </p:panel>
+            <p:tabView id="primefaces">
+                <p:tab title="Primeiros exemplos PrimeFaces">
+                    <p:panelGrid columns="2">
+                        <h:outputLabel for="nome" value="Nome: "/>
+                        <p:keyboard id="nome"/> 
+
+                        <h:outputLabel for="senha" value="Senha: "/>
+                        <p:password feedback="true"
+                                    promptLabel="Insira a sua senha" weakLabel="Fraca"
+                                    goodLabel="Boa" strongLabel="Forte"/>
+
+                        <h:outputLabel for="data" value="Data: "/>
+                        <p:calendar id="data" locale="#{geralBean.locale}" 
+                                    pages="2" showOn="focus"
+                                    placeholder="dd/mm/aaaa"
+                                    navigator="true"
+                                    mask="aa/aa/aaaa"
+                                    showOtherMonths="true"
+                                    value="#{primefacesBean.data}" 
+                                    onselect="mensagens"/>
+
+                    </p:panelGrid>
+                    <p:button value="Salvar"/>
+                </p:tab>
+                <p:tab title="Opinião">
+                    <h:outputText value="Gostou do PrimeFaces?"/>
+                    <p:rating stars="5"/>
+                </p:tab>
+                <p:tab title="Linha de hotéis">
+                    <h2>Veja mais dos nossos hotéis</h2>
+
+                    <p:commandButton type="button" value="Ver aqui" onclick="PF('dlg').show()" icon="pi pi-home"/>
+
+                    <p:dialog header="Imagens do nossos Hotéis em Goiás" widgetVar="dlg" modal="true"
+                              draggable="true" resizable="false" showEffect="fade" hideEffect="fade">
+
+                        <p:imageSwitch effect="fade">
+                            <ui:repeat value="#{imagesViewBean.images}" var="image">
+                                <p:graphicImage name="#{image}" library="hoteis_exemplares" width="950px" height="550px"/>
+                            </ui:repeat>
+                        </p:imageSwitch>
+                    </p:dialog>
+                </p:tab>
+            </p:tabView>
+            <p:resizable for="primefaces"/>
+            <p:draggable for="primefaces" opacity="0.6"/>
         </h:form>
-        
     </ui:define>
 </ui:composition>
