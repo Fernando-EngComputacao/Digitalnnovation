@@ -6,4 +6,4 @@
 
 ##### [Curso em vídeo](https://www.cursoemvideo.com)
 ##### [Digital Innovation One](https://www.dio.me//)
-##### [Udemy] (https://www.udemy.com/)
+##### [Udemy](https://www.udemy.com/)
