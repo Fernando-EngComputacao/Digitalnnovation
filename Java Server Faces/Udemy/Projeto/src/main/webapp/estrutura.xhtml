@@ -4,47 +4,49 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui">
-    <h:head>
-        <title> #{titulo} </title>
-        <style>
-            @IMPORT url("resources/css/layoutNew.css");
-        </style>
-    </h:head>
-    <h:body>
-        <div id="topo">
-            <h:graphicImage name="corejur.png" library="imagens"/>
-            <form>
-                <ui:repeat var="x" value="#{geralBean.localesDisponiveis}" id="flag">
-                    <h:commandButton image="resources/bandeiras/#{x}.gif" actionListener="#{geralBean.atualizarLocale}"/>
-                </ui:repeat>
-            </form>
-        </div>
-        <div id="conteudo">
-            <div id="esquerda">
-                <ui:include src="/menu.xhtml"/>
+      xmlns:p="http://primefaces.org/ui">   
+    <f:view locale="#{geralBean.locale}">
+        <h:head>
+            <title> #{titulo} </title>
+            <style>
+                @IMPORT url("resources/css/layoutNew.css");
+            </style>
+        </h:head>
+        <h:body>
+            <div id="topo">
+                <h:graphicImage name="corejur.png" library="imagens"/>
+                <form>
+                    <ui:repeat var="x" value="#{geralBean.localesDisponiveis}" id="flag">
+                        <h:commandButton image="resources/bandeiras/#{x}.gif" actionListener="#{geralBean.atualizarLocale}"/>
+                    </ui:repeat>
+                </form>
             </div>
-            
-            <div id="direita">
-                <ui:insert name="direita">
-                    Àrea direita
-                </ui:insert>
+            <div id="conteudo">
+                <div id="esquerda">
+                    <ui:include src="/menu.xhtml"/>
+                </div>
+
+                <div id="direita">
+                    <ui:insert name="direita">
+                        Àrea direita
+                    </ui:insert>
+                </div>
+
+                <div id="centro">
+                    <ui:insert name="centro">
+                    </ui:insert>
+                </div>
             </div>
-            
-            <div id="centro">
-                <ui:insert name="centro">
-                </ui:insert>
+            <div id="rodape">
+                <strong>
+                    Rede Empresarial - CoreJur
+                </strong>
+                <p>
+                    <b>Endereço:</b> Av. Marechal Deodoro, 247 Sobreloja Galeria, Av. Pasteur - Parque Anhanguera, Goiânia - GO, 74340-065
+                </p>
             </div>
-        </div>
-        <div id="rodape">
-            <strong>
-                Rede Empresarial - CoreJur
-            </strong>
-            <p>
-                <b>Endereço:</b> Av. Marechal Deodoro, 247 Sobreloja Galeria, Av. Pasteur - Parque Anhanguera, Goiânia - GO, 74340-065
-            </p>
-        </div>
-        <ui:debug/>
-    </h:body>
+            <ui:debug/>
+        </h:body>
+    </f:view>
 </html>
 

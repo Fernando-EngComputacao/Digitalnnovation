@@ -18,7 +18,7 @@
         <h1>Pessoas Cadastradas</h1>
 
         <h:form>
-            <h:panelGrid columns="3">
+            <h:panelGrid id="painel" columns="3">
                 #{mens.escolha}
                 <h:selectOneMenu value="#{geralBean.locale}">
                     <f:selectItems value="#{geralBean.localesDisponiveis}" />
@@ -151,7 +151,7 @@
                 </h:column>
             </h:dataTable>
         </h:form>
-        <p id="p">Fernando Furtado</p>
+        <p id="p"> &copy; Fernando Furtado</p>
     </ui:define>
 </ui:composition>
 
