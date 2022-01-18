@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Minha página</title>
+    <title>Buscador de CEPs</title>
+    <style>
+        @IMPORT url('css/style.css');
+    </style>
 </head>
 
 <body>
@@ -12,18 +15,22 @@
 
     <section>
         <div>
-            <label>CEP: <input type="number" id="txtcep"></label>
-            <button onclick="consultaCep()">Clique aqui</button>
+            <img src="img/buscaCep.png">
+        </div>
+        <div>
+            <label><input type="number" title="CEP:" id="txtcep">
+                <button onclick="consultaCep()">Clique aqui</button>
+            </label>
         </div>
         <div id="resul">
-            ...
+
         </div>
     </section>
 
     <footer>
     </footer>
-    
-    <p>&copy; Fernando</p>
+
+    <p>&copy; Fernando Furtado</p>
     <script src="script/script.js"></script>
     <script src="script/jquery.js"></script>
 </body>
