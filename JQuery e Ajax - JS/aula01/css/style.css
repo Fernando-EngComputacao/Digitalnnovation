@@ -66,3 +66,7 @@ div {
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+section {
+    margin-top: 10%;
+}
