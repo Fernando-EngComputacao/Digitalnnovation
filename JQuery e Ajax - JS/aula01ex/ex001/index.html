@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador de CEPs</title>
+    <style>
+        @IMPORT url('css/style.css');
+    </style>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand text-white">Consulta CEP</a>
+        <div class="d-flex" id="idDivPainel">
+            <input class="form-control me-2" type="search" placeholder="CEP" id="txtcep">
+            <button class="btn btn-outline-success" onclick="consultaCep()">Buscar</button>
+        </div>
+    </nav>
+
+    <div class="container" id="idContainer">
+        <div class="row">
+            <h3 id="idH3">Lista de CEP</h3>
+        </div>
+        <div id="idDivTable" class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td id="tbtitulo"> Insira um CEP</td>
+                    </tr>
+                </thead>
+                <tbody id="idtable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer id="idfooter">
+        <button class="btn btn-outline-success" onclick="limpar()" id="idbuttonLimparTabela">Limpar Tabela</button>
+        <p>&copy; Fernando Furtado</p>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="script/jquery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+a {
+    margin-left: 1.5%;
+}
+
+#idDivPainel {
+    margin-right: 1.5%;
+}
+
+#idContainer {
+    margin: 5% 0% 0% 5%;
+}
+
+#idDivTable {
+    margin-top: 2%;
+}
+
+#idTdStrong, #tbtitulo {
+    font-weight: bold;
+}
+
+#idbuttonLimparTabela {
+    margin: 5% 0% 0% 0%;
+}
+
+p {
+    margin: 8% 0% 0% 0%;
+    font-size: 10px;
+}
+
+#idfooter {
+    width: 100%;
+    margin: -4% 0% 10% 5%;
+}

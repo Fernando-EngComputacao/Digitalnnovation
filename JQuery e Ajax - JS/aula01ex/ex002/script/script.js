@@ -1,8 +1,11 @@
 
 function consultaCep(){
-var valor = document.getElementById("txtcep")
-var cep = Number(valor.value)
+var aux = document.getElementById("txtcep")
+var valor = ((String(aux.value).replace(" ", ".")).replace(".","")).replace("-","")
+console.log(`->O VALOR é [${valor}], do tipo ${typeof(valor)} e pode virar ${typeof(Number(valor))}`)
+var cep = Number(valor)
 var resultado = document.getElementById('resul')
+console.log(`CEP: ${typeof(valor)} - ${typeof(Number(valor))} - CEP: ${Number(valor.value)}`)
 var p = document.createElement('h4')
 var txt = ``
 resultado.innerHTML = ``
