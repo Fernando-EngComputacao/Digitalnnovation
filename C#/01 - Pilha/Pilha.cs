@@ -11,7 +11,7 @@ namespace Projeto01
         public object Desempilha() {
             if (primeiro==null){
                 int a = 2;
-                a--;
+                a--; 
             }
 
             object resultado = primeiro.item;
