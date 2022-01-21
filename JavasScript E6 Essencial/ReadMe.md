@@ -1,7 +1,7 @@
 # Curso de JavaScript ES6 Essencial na Digital Innovation One
 
 ### Conteúdo:
-##### 01.Trata sobre Closure;
+##### 01.Trata sobre Closure (ex001);
 ##### 02.Trata sobre Currying (ex002)
 ##### 03.Trata sobre Hoisting-variável (ex003)
 ##### 04.Trara sobre Hoisting-função (ex004)
