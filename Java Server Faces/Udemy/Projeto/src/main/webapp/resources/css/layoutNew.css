@@ -166,3 +166,8 @@ tr.linha2 > td {
     width: 25px;
     height: 25px;
 }
+
+#idImgEstrutura {
+    margin-top: 2%;
+    margin-left: 2%;
+}

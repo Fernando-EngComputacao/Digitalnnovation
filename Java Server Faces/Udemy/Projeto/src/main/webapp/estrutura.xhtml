@@ -5,7 +5,6 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">   
-    <f:view locale="#{geralBean.locale}">
         <h:head>
             <title> #{titulo} </title>
             <style>
@@ -14,7 +13,7 @@
         </h:head>
         <h:body>
             <div id="topo">
-                <h:graphicImage name="corejur.png" library="imagens"/>
+                <h:graphicImage name="furtado2.png" library="imagens" id="idImgEstrutura"/>
                 <form>
                     <ui:repeat var="x" value="#{geralBean.localesDisponiveis}" id="flag">
                         <h:commandButton image="resources/bandeiras/#{x}.gif" actionListener="#{geralBean.atualizarLocale}"/>
@@ -47,6 +46,5 @@
             </div>
             <ui:debug/>
         </h:body>
-    </f:view>
 </html>
 

@@ -14,7 +14,7 @@ import modelo.Pessoa;
 import modelo.PessoaFisica;
 import modelo.PessoaJuridica;
 import modelo.Sexo;
- 
+
 @Named
 @SessionScoped
 public class CadastroPessoasBean implements Serializable{

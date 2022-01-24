@@ -6,7 +6,7 @@
     <display-name>ReservasHotel</display-name>
     <context-param>
         <param-name>facelets.LIBRARIES</param-name>
-        <param-value>/WEB-INF/corejur.taglib.xml</param-value>
+        <param-value>/WEB-INF/fernandofurtado.taglib.xml</param-value>
     </context-param>
     <welcome-file-list>
         <welcome-file>teste.jsf</welcome-file>
