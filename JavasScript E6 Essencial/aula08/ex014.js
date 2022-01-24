@@ -80,7 +80,7 @@ console.log(`\nSome\nPelo menos um ítem do vetor [${array}] é par? `,arraySome
 
 // Retorna um booleano verificando se todos os itens de um array satisfazem a condição  -  every()
 var arrayEvery = array.every(value => value % 2 == 0)
-console.log(`\nEveruy\nTodos os ítens do vetor [${array}] é par?`,arrayEvery)
+console.log(`\nEvery\nTodos os ítens do vetor [${array}] é par?`,arrayEvery)
 
 // Ordena os elementos de um array de acordo com a condição  -  sort()
 var arraySort = array.sort()
