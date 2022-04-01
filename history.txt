@@ -1,0 +1,1000 @@
+1115  sudo apt install mysql-server
+ 1116  sudo mysql_secure_installatio
+ 1117  sudo mysql_secure_installation
+ 1118  sudo mysql
+ 1119  sudo apt-get update
+ 1120  sudo apt-get upgrade
+ 1121  sudo apt install mysql-server
+ 1122  sudo apt remove workbench
+ 1123  sudo remove mysql-workbench
+ 1124  sudo apt remove mysql-workbench
+ 1125  sudo apt remove workbench
+ 1126  sudo apt-get update
+ 1127  sudo apt-get upgrade
+ 1128  sudo apt autoremove
+ 1129  sudo apt remove
+ 1130  sudoapt-get remove mysql-workbench-community
+ 1131  sudo apt-get remove mysql-workbench-community
+ 1132  sudo apt autoremove
+ 1133  mysql
+ 1134  sudo mysql
+ 1135  sudo apt-get udpate
+ 1136  sudo apt-get update
+ 1137  sudo apt-get dist-upgrade
+ 1138  sudo reboot
+ 1139  sudo apt-get update && sudo apt-get dist-upgrade
+ 1140  sudo apt cdrom
+ 1141  sudo apt-cdrom
+ 1142  sudo apt-get dist-upgrade
+ 1143  sudo apt-get update
+ 1144  sudo apt autoremove
+ 1145  sudo apt upgrade
+ 1146  sudo apt update
+ 1147  sudo apt upgrade
+ 1148  sudo apt-get update
+ 1149  sudo apt upgrade
+ 1150  sudo apt autoremove
+ 1151  sudo apt-get update
+ 1152  apt clean
+ 1153  sudo apt clena
+ 1154  sudo apt clean
+ 1155  sudo apt-get uptade
+ 1156  sudo apt-get update
+ 1157  sudo apt-get clean
+ 1158  sudo apt-get update
+ 1159  sudo apt cle a
+ 1160  sudo apt clean
+ 1161  sudo apt update
+ 1162  sudo apt clean
+ 1163  sudo apt-get clean
+ 1164  sudo apt-get update
+ 1165  sudo apt-get dist-upgrade
+ 1166  sudo apt install gnome-tweak
+ 1167  sudo add-apt-repository ppa:daniruiz/flat-remix
+ 1168  sudo apt-get update
+ 1169  sudo apt-get install flat-remix-gnome
+ 1170  wget https://launchpad.net/ubuntu/+archive/primary/+files/gnome-tweak-tool_3.26.2.1-1ubuntu1_all.deb -O gnome-tweak-tool.deb
+ 1171  sudo dpkg -i gnome-tweak-tool.deb
+ 1172  sudo apt-get install -f
+ 1173  ls
+ 1174  cd Documentos/
+ 1175  mkdir Gabriel
+ 1176  cd Gabriel/
+ 1177  mkdir Lista-01 && mkdir Lista-02
+ 1178  ls
+ 1179  cd Documentos/Gabriel/
+ 1180  rm Lista-01 lista1_Gabriel_Pires
+ 1181  mv Lista-01 lista1_Gabriel_Pires
+ 1182  mv Lista-02 lista2_Gabriel_Pires
+ 1183  exit
+ 1184  pip3 install keyboard
+ 1185  sudo pip3 install keyboard
+ 1186  sudo apt-get update
+ 1187  sudo apt-get upgrade
+ 1188  sudo apt-get autoremove
+ 1189  sudo apt-get install pavucontrol
+ 1190  sudo apt install inxi
+ 1191  cd Documentos/
+ 1192  cd Gabriel/
+ 1193  mkdir lista3_Gabriel_Pires
+ 1194  git
+ 1195  git status
+ 1196  ls
+ 1197  git --version
+ 1198  sudo apt-get update
+ 1199  sudo apt-get upgrade
+ 1200  sudo apt-get autoremove
+ 1201  ls
+ 1202  cd Workspace/
+ 1203  ls
+ 1204  mkdir UOL
+ 1205  ls
+ 1206  cd UOL/
+ 1207  git init
+ 1208  git config --global user.name "Fernando Furtado"
+ 1209  git config --global user.email "fernando.furtadocarrilho@gmail.com"
+ 1210  git config --global user.name "Fernando-EngComputacao"
+ 1211  git status
+ 1212  cl
+ 1213  clear
+ 1214  git config
+ 1215  git config show
+ 1216  git config --show-origin
+ 1217  clear
+ 1218  <html lang="en">
+ 1219  <head>
+ 1220  </head>
+ 1221  <body>
+ 1222  </body>
+ 1223  </html>" > index.html
+ 1224  exit
+ 1225  > teste.txt
+ 1226  tkdf
+ 1227  .exit
+ 1228  .exit
+ 1229  clear
+ 1230  .close
+ 1231  close
+ 1232  ls
+ 1233  cd Workspace/
+ 1234  ls
+ 1235  cd UOL/
+ 1236  ls
+ 1237  mkdir Git&GitHub
+ 1238  ls
+ 1239  nano "Teste" > teste.html
+ 1240  cd Workspace/UOL/Git/
+ 1241  <html lang="en">
+ 1242  <head>
+ 1243  </head>
+ 1244  <body>
+ 1245  </body>
+ 1246  </html>" > index.html
+ 1247  cd Workspace/UOL/Git/
+ 1248  ls
+ 1249  nano index.html
+ 1250  ls
+ 1251  git status
+ 1252  git add .
+ 1253  git status
+ 1254  git -m commit "New file for test Git"
+ 1255  git config -all
+ 1256  git config --al
+ 1257  git config --global all
+ 1258  git -l
+ 1259  git --al
+ 1260  git --all
+ 1261  clear
+ 1262  git commit -m "New file for teste Git"
+ 1263  ls
+ 1264  nano index.html 
+ 1265  git status
+ 1266  git add .
+ 1267  git commit -m "Update file"
+ 1268  git log
+ 1269  git all
+ 1270  git -l
+ 1271  git config user
+ 1272  git config user.name
+ 1273  git config user.email
+ 1274  git log --oneline
+ 1275  clear
+ 1276  git log -p
+ 1277  ls
+ 1278  git log -p
+ 1279  mkdir idle-config
+ 1280  ls
+ 1281  git status
+ 1282  nano .gitignore
+ 1283  git status
+ 1284  nano .gitignore
+ 1285  git status
+ 1286  git add .gitignore 
+ 1287  git status
+ 1288  cd ../fasd
+ 1289  git add .
+ 1290  ls
+ 1291  cd idle-config/
+ 1292  ls
+ 1293  mkdir resre
+ 1294  cd ..
+ 1295  ls
+ 1296  git status
+ 1297  rm idle-config/
+ 1298  mv -r idle-config/
+ 1299  rm idle-config/
+ 1300  rm -r idle-config/
+ 1301  ls
+ 1302  ls -a
+ 1303  nano .gitignore 
+ 1304  mkdir idle-config
+ 1305  nano .gitignore 
+ 1306  clear
+ 1307  ls
+ 1308  git status
+ 1309  git add .gitignore 
+ 1310  ls
+ 1311  git status
+ 1312  ls
+ 1313  nano .gitignore 
+ 1314  git status
+ 1315  git add .gitignore 
+ 1316  ls
+ 1317  git status
+ 1318  git commit -m ".gitignore"
+ 1319  history
+ 1320  git log --online
+ 1321  git git log --onlline
+ 1322  git status
+ 1323  git init
+ 1324  git config --all
+ 1325  git config user.name
+ 1326  git log --online
+ 1327  git log
+ 1328  git add .gitignore 
+ 1329  git commit -m "Teste"
+ 1330  git log
+ 1331  git log --online
+ 1332  git log --oneline
+ 1333  nano ide-config
+ 1334  git status
+ 1335  git add .
+ 1336  git rm ide-config 
+ 1337  git status
+ 1338  rm -r ide-config
+ 1339  ls
+ 1340  nano ide-config
+ 1341  ls
+ 1342  git status
+ 1343  nano .gitignore 
+ 1344  git status
+ 1345  git .gitignore
+ 1346  git add .gitignore 
+ 1347  git status
+ 1348  rm -r .gitignore 
+ 1349  ls -a
+ 1350  nano .gitignore
+ 1351  ls
+ 1352  git status
+ 1353  clear
+ 1354  git status
+ 1355  git add .gitignore 
+ 1356  git status
+ 1357  git add .gitignore 
+ 1358  git status
+ 1359  git remote add origin https://github.com/Fernando-EngComputacao/Programming-courses.git
+ 1360  git remove -v
+ 1361  git remote
+ 1362  git remote -v
+ 1363  git status
+ 1364  cd Workspace/UOL/
+ 1365  ls
+ 1366  cd Git/
+ 1367  ls
+ 1368  clear
+ 1369  git remote add origin https://github.com/Fernando-EngComputacao/Programming-courses.git
+ 1370  git remote
+ 1371  git remote -v
+ 1372  git clone https://github.com/Fernando-EngComputacao/Programming-courses.git
+ 1373  ls
+ 1374  cd Programming-courses/
+ 1375  ls
+ 1376  cd ..
+ 1377  la
+ 1378  ls
+ 1379  la
+ 1380  ls
+ 1381  cd Programming-courses/
+ 1382  ls
+ 1383  la
+ 1384  cd ..
+ 1385  ls
+ 1386  mkdir Git
+ 1387  mv ide-config Git
+ 1388  mv index.html Git
+ 1389  ls
+ 1390  mv Git/ Programming-courses/
+ 1391  ls
+ 1392  cd Programming-courses/
+ 1393  ls
+ 1394  cd Git
+ 1395  ls
+ 1396  cd ..
+ 1397  ls
+ 1398  git init
+ 1399  git push origin master
+ 1400  git status
+ 1401  git add .
+ 1402  git add *
+ 1403  git commit -m "Git Alura"
+ 1404  git push origin master
+ 1405  git push origin main
+ 1406  ls
+ 1407  la
+ 1408  nano .gitignore
+ 1409  git status
+ 1410  nano ide-config
+ 1411  nano .gitignore 
+ 1412  git status
+ 1413  git add .gitignore 
+ 1414  ls
+ 1415  git status
+ 1416  ls
+ 1417  nano teste
+ 1418  ls
+ 1419  git status
+ 1420  nano .gitignore 
+ 1421  git status
+ 1422  git add .gitignore 
+ 1423  git status
+ 1424  ls
+ 1425  rm -r teste 
+ 1426  ls
+ 1427  git status
+ 1428  git branch
+ 1429  git checkout master
+ 1430  git branch master
+ 1431  git checkout
+ 1432  git checkout master
+ 1433  git branch
+ 1434  git checkout main
+ 1435  git branch
+ 1436  git log 
+ 1437  cd Workspace/UOL/
+ 1438  ls
+ 1439  cd Git/
+ 1440  ls
+ 1441  cd Programming-courses/
+ 1442  ls
+ 1443  git remote -v
+ 1444  cd ..
+ 1445  mv Git/Programming-courses/ 
+ 1446  mv Git/Programming-courses/ ~/Workspace/UOL/
+ 1447  ls
+ 1448  rm -r Git/
+ 1449  ls
+ 1450  cd Git/
+ 1451  ls
+ 1452  la
+ 1453  rm -r .git/
+ 1454  ls
+ 1455  la
+ 1456  rm .git/
+ 1457  rm -r .git
+ 1458  ls
+ 1459  la
+ 1460  cd ..
+ 1461  ls
+ 1462  cd Programming-courses/
+ 1463  ls
+ 1464  git status
+ 1465  git log -d
+ 1466  git log -p
+ 1467  git remote
+ 1468  git status
+ 1469  git branch
+ 1470  ls
+ 1471  git checkout master
+ 1472  ls
+ 1473  git branch
+ 1474  git checkout main
+ 1475  git branch
+ 1476  git checkout master
+ 1477  git branch
+ 1478  git checkout main
+ 1479  git branch
+ 1480  git checkout master
+ 1481  git merge main
+ 1482  git branch
+ 1483  cd ..
+ 1484  ls
+ 1485  git Pasta-Testes
+ 1486  mkdir pastaTestes
+ 1487  cd pastaTestes/
+ 1488  ls
+ 1489  git init --bare
+ 1490  cd ..
+ 1491  la
+ 1492  cd Programming-courses/
+ 1493  git remote local ~/home/fernando/Workspace/UOL/pastaTestes/~
+ 1494  branch
+ 1495  git branch
+ 1496  cd ..
+ 1497  ls
+ 1498  mkdir Ana
+ 1499  mkdir Beto
+ 1500  la
+ 1501  cd Ana/
+ 1502  git init
+ 1503  cd ..
+ 1504  cd Beto/
+ 1505  git init
+ 1506  cd ..
+ 1507  ls
+ 1508  rm -r pastaTestes/
+ 1509  ls
+ 1510  mkdir servidor
+ 1511  cd servidor/
+ 1512  git init --bare
+ 1513  cd ../Beto/
+ 1514  git status
+ 1515  git remote
+ 1516  ls
+ 1517  la
+ 1518  git remote add local /home/fernando/Workspace/UOL/servidor/
+ 1519  git remote -v
+ 1520  ../Ana/
+ 1521  git remote add local /home/fernando/Workspace/UOL/servidor/
+ 1522  ../Ana/
+ 1523  cd ../Ana/
+ 1524  git remote add local /home/fernando/Workspace/UOL/servidor/
+ 1525  git remote -v
+ 1526  cd
+ 1527  cd Workspace/UOL/
+ 1528  ls
+ 1529  cd Programming-courses/
+ 1530  ls
+ 1531  mv ide-config ../servidor/
+ 1532  ls
+ 1533  mv teste ../servidor/
+ 1534  cd git
+ 1535  mv Git/ ../servidor/
+ 1536  ls
+ 1537  git status 
+ 1538  git add .
+ 1539  git commit -m "Organizando a pasta removendo a pasta Git"
+ 1540  git push
+ 1541  git push origin main
+ 1542  git status
+ 1543  cd ..
+ 1544  ls
+ 1545  mv Beto/ beto
+ 1546  mv Ana/ ana
+ 1547  ls
+ 1548  cd ana/
+ 1549  ls
+ 1550  git status
+ 1551  git clone ~/Workspace/UOL/servidor/
+ 1552  ls
+ 1553  cd servidor/
+ 1554  ls
+ 1555  cd ..
+ 1556  rm r- servidor/
+ 1557  ls
+ 1558  cd ../
+ 1559  ls
+ 1560  cd servidor/
+ 1561  ls
+ 1562  git staus
+ 1563  cd ../ana/
+ 1564  LS
+ 1565  ls
+ 1566  git status
+ 1567  git clone ~/Workspace/UOL/servidor/
+ 1568  ls
+ 1569  cd servidor/
+ 1570  ls
+ 1571  cd ..
+ 1572  sudo rm -r servidor/
+ 1573  ls
+ 1574  cd ..
+ 1575  cd ana/
+ 1576  ls
+ 1577  git pull local
+ 1578  git status
+ 1579  git branch
+ 1580  ls
+ 1581  git branch
+ 1582  git remote -v
+ 1583  git clone /home/fernando/Workspace/UOL/servidor/
+ 1584  ls
+ 1585  cd servidor/
+ 1586  ls
+ 1587  rm -r ser
+ 1588  cd ../ rm -r servidor
+ 1589  ls
+ 1590  cd ..
+ 1591  rm -r servidor
+ 1592  ls
+ 1593  la
+ 1594  ls
+ 1595  la
+ 1596  cd ..
+ 1597  ls
+ 1598  cd servidor/
+ 1599  ls
+ 1600  mv Git/ ../
+ 1601  ls
+ 1602  cd ..
+ 1603  ls
+ 1604  rm -r servidor/
+ 1605  ls
+ 1606  git init --bare
+ 1607  ls
+ 1608  rm -r branches/ hooks/ objects/ refs/
+ 1609  ls
+ 1610  rm -r config description HEAD info/
+ 1611  ls
+ 1612  mkdir servidor
+ 1613  ls
+ 1614  cd servidor/
+ 1615  ls
+ 1616  git init --bare
+ 1617  ls
+ 1618  cd ..
+ 1619  ls
+ 1620  cd anna
+ 1621  cd ana
+ 1622  ls
+ 1623  git branch
+ 1624  git remote -v
+ 1625  git clone /home/fernando/Workspace/UOL/servidor/
+ 1626  ls
+ 1627  git pull
+ 1628  ls
+ 1629  cd  ..
+ 1630  ls
+ 1631  mv Git/ servidor/
+ 1632  ls
+ 1633  cd ana
+ 1634  ls
+ 1635  git status
+ 1636  git add .
+ 1637  git add *
+ 1638  ls
+ 1639  rm -r servidor/
+ 1640  ls
+ 1641  git remote add /home/fernando/Workspace/UOL/servidor/Git/
+ 1642  ls
+ 1643  git remote add local /home/fernando/Workspace/UOL/servidor/Git/
+ 1644  ls
+ 1645  cd ..
+ 1646  ls
+ 1647  rm r- ana/ beto/ servidor/
+ 1648  ls
+ 1649  sudo rm -r ana/ beto/ servidor/
+ 1650  ls
+ 1651  mkdir servidor
+ 1652  cd servidor/
+ 1653  git init --bare
+ 1654  cd ..
+ 1655  mkdir beto
+ 1656  mkdir ana
+ 1657  cd beto/
+ 1658  git init
+ 1659  git status
+ 1660  git branch
+ 1661  git branch master
+ 1662  git branch
+ 1663  git remote
+ 1664  gir remote -v
+ 1665  git remote add local /home/fernando/Workspace/UOL/servidor/
+ 1666  ls
+ 1667  git remote -v
+ 1668  cd ../ana/
+ 1669  git remote add local /home/fernando/Workspace/UOL/servidor/
+ 1670  git status
+ 1671  git remote -v
+ 1672  git clone /home/fernando/Workspace/UOL/servidor/
+ 1673  ls
+ 1674  cd ..
+ 1675  sudo rm -r ana/
+ 1676  ls
+ 1677  cd beto/
+ 1678  ls
+ 1679  cd ..
+ 1680  mkdir ana
+ 1681  cd ana/
+ 1682  git init
+ 1683  git remote add local /home/fernando/Workspace/UOL/servidor/
+ 1684  ls
+ 1685  git remote -v
+ 1686  git status
+ 1687  git clone /home/fernando/Workspace/UOL/servidor/
+ 1688  ls
+ 1689  rm -r servidor/
+ 1690  ls
+ 1691  git clone /home/fernando/Workspace/UOL/servidor/ projeto
+ 1692  ls
+ 1693  cd projeto/
+ 1694  ls
+ 1695  cd ..
+ 1696  ls
+ 1697  cd projeto/
+ 1698  nano .gitignore
+ 1699  nano ide-config
+ 1700  ls
+ 1701  git status
+ 1702  git add .gitignore 
+ 1703  ls
+ 1704  git status
+ 1705  git commit -m "Adicionando o gitignore"
+ 1706  nano index.html
+ 1707  git status
+ 1708  git add .
+ 1709  git commit -m "Adicionando o Index"
+ 1710  git push local 
+ 1711  git remote
+ 1712  git remote rename origin local
+ 1713  ls
+ 1714  git remote
+ 1715  git push local master
+ 1716  cd ..
+ 1717  cd servidor/
+ 1718  ls
+ 1719  cd ..
+ 1720  cd beto/
+ 1721  ls
+ 1722  git remomte
+ 1723  git remote
+ 1724  git config --global user.name "Beto"
+ 1725  git config --global user.name
+ 1726  git pull loca master
+ 1727  git pull local master
+ 1728  ls
+ 1729  cd ../ana/
+ 1730  ls
+ 1731  cd projeto/
+ 1732  ls
+ 1733  cd ../../beto/
+ 1734  la
+ 1735  cd ../ana/projeto/
+ 1736  ls
+ 1737  git status
+ 1738  git add .
+ 1739  git commit -m "Integração Contínua: add"
+ 1740  cd ../../beto/
+ 1741  ls
+ 1742  nano index.html 
+ 1743  git pull local master
+ 1744  nano index.html 
+ 1745  cd ../ana/projeto/
+ 1746  ls
+ 1747  nano index.html 
+ 1748  git push
+ 1749  cd ../../beto/
+ 1750  ls
+ 1751  nano index.html 
+ 1752  git pull
+ 1753  git pull local master
+ 1754  nano index.html 
+ 1755  git log -p
+ 1756  cd ../ana/projeto/
+ 1757  ls
+ 1758  git branch titulo
+ 1759  git branch
+ 1760  git checkout titulo 
+ 1761  git branch
+ 1762  nano index.html 
+ 1763  git add .
+ 1764  git commit -m "Alterando o título da página"
+ 1765  git log
+ 1766  nano index.html 
+ 1767  git add .
+ 1768  git commit -m "Reenomeando o título"
+ 1769  git log
+ 1770  git checkout master
+ 1771  git log
+ 1772  git checkout titulo
+ 1773  cd ../../beto/
+ 1774  git branch lista
+ 1775  git checkout lista 
+ 1776  nano index.html 
+ 1777  git status
+ 1778  git add .
+ 1779  git commit -m "Adicionando Kubernetes"
+ 1780  git branch
+ 1781  git checkout master 
+ 1782  nano index.html 
+ 1783  git add .
+ 1784  git commit -m "Corringindo nome do curso Docker"
+ 1785  nano index.html 
+ 1786  git merge lista 
+ 1787  git branch
+ 1788  git merge titulo
+ 1789  git branch lista 
+ 1790  nano index.html 
+ 1791  git status
+ 1792  git add .
+ 1793  git commit -m "Adicionando título para a lista"
+ 1794  nano index.html 
+ 1795  git branch master 
+ 1796  git branch
+ 1797  nano index.html 
+ 1798  git log -p
+ 1799  git status
+ 1800  git branch
+ 1801  nano index.html 
+ 1802  git add .
+ 1803  git commit -m "Removendo nome da lista"
+ 1804  git checkout lista 
+ 1805  git branch
+ 1806  nano index.html 
+ 1807  git add .
+ 1808  git commit -m "Adicionando título para a lista"
+ 1809  nano index.html 
+ 1810  git checkout master 
+ 1811  nano index.html 
+ 1812  git merge lista 
+ 1813  nano index.html 
+ 1814  git log -d
+ 1815  git log
+ 1816  git branch
+ 1817  git checkout lista 
+ 1818  nano index.html 
+ 1819  git log --graph
+ 1820  git checkout master 
+ 1821  git merge lista 
+ 1822  git log --graph
+ 1823  git checkout lista 
+ 1824  git branch
+ 1825  nano index.html 
+ 1826  git add .
+ 1827  git commit -m "Renoamendo o Título dos cursos"
+ 1828  git checkout master 
+ 1829  nano index.html 
+ 1830  git rebase lista 
+ 1831  git merge lista 
+ 1832  git branch 
+ 1833  git checkout master 
+ 1834  git branch
+ 1835  .exit
+ 1836  git branch master
+ 1837  git checkout master
+ 1838  git merge index.html
+ 1839  git merge lista
+ 1840  git status
+ 1841  git add .
+ 1842  git merge lista 
+ 1843  git checkout master 
+ 1844  git commit -m "Teste"
+ 1845  git checkout master 
+ 1846  nano index.html 
+ 1847  git checkout 
+ 1848  git checkout lista 
+ 1849  nano index.html 
+ 1850  git add .
+ 1851  git commit -m "Corringido nome da Lista de cursos"
+ 1852  git log --graph
+ 1853  git merge master 
+ 1854  nano index.html 
+ 1855  git branch
+ 1856  git checkout master
+ 1857  nano index.html 
+ 1858  git merge lista 
+ 1859  nano index.html 
+ 1860  git log -p
+ 1861  cd ~
+ 1862  ls
+ 1863  mkdir Teste
+ 1864  cd T
+ 1865  cd ..
+ 1866  cd Teste/
+ 1867  git init
+ 1868  cd ..
+ 1869  rm -r Teste/
+ 1870  ls
+ 1871  exit
+ 1872  cd Workspace/UOL/
+ 1873  ls
+ 1874  cd ana
+ 1875  cd projeto/
+ 1876  git log -d
+ 1877  git log --oneline
+ 1878  git rebase -i 618fff7
+ 1879  git log --oneline
+ 1880  nano index.html 
+ 1881  git add .
+ 1882  git commit -m "Alterando de UL para DT"
+ 1883  git push local master
+ 1884  .idle
+ 1885  git balme
+ 1886  git blame
+ 1887  git blame index.html
+ 1888  git config --global user.name "Ana"
+ 1889  git config --global user.name
+ 1890  git config --local user.name
+ 1891  git config --local user.name "Ana"
+ 1892  git config --local user.name
+ 1893  git log --graph
+ 1894  la
+ 1895  cd .git/
+ 1896  ls
+ 1897  vim la
+ 1898  la
+ 1899  cd hooks/
+ 1900  ls
+ 1901  la
+ 1902  nano pre-commit.sample 
+ 1903  vim pre-commit
+ 1904  nano pre-commit
+ 1905  git add .
+ 1906  cd ../../
+ 1907  git add .
+ 1908  git commit -m "pre-commit"
+ 1909  git branch
+ 1910  git checkout master
+ 1911  git status
+ 1912  nano index.html 
+ 1913  git add .
+ 1914  git commit -m "pre-commit"
+ 1915  cd .git/hooks/
+ 1916  ls
+ 1917  ls -l
+ 1918  chmod 8 8 8
+ 1919  chmod 15
+ 1920  chmod --help
+ 1921  chmod 777
+ 1922  chmod 777 pre-commit
+ 1923  ls -l
+ 1924  chmod 774 pre-commit
+ 1925  ls -l
+ 1926  chmod 775 pre-commit
+ 1927  ls -l
+ 1928  cd ../..
+ 1929  git commit -m "Teste"
+ 1930  nano index.html 
+ 1931  git add .
+ 1932  git commit -m "Adionando subtitulo Docker"
+ 1933  git log --oneline
+ 1934  history
+ 1935  cd .git/hooks/
+ 1936  nano post-receive
+ 1937  nano post-receive 
+ 1938  la
+ 1939  ls -l
+ 1940  chmod 775 post-receive 
+ 1941  ls -l
+ 1942  cd ../..
+ 1943  nano index.html 
+ 1944  git add .
+ 1945  git commit -m "Retirando a quebra de linha"
+ 1946  git push local master
+ 1947  nano index.html 
+ 1948  git status
+ 1949  git branch
+ 1950  git commit -m "parte 02 no V"
+ 1951  git add .
+ 1952  git commit -m "parte 02 no V"
+ 1953  git push local master
+ 1954  nano in
+ 1955  nano index.html 
+ 1956  ls
+ 1957  git add .
+ 1958  git commit -m "QL"
+ 1959  git push local master
+ 1960  cd /home/fernando/Workspace/UOL/servidor/~
+ 1961  cd ~
+ 1962  cd /home/fernando/Workspace/UOL/servidor/
+ 1963  nano info/
+ 1964  nano index.html
+ 1965  ls
+ 1966  cd ..
+ 1967  ls
+ 1968  cd ana/
+ 1969  nano inde
+ 1970  la
+ 1971  cd projeto/
+ 1972  nano index.html 
+ 1973  git add .
+ 1974  git commit 
+ 1975  git add .
+ 1976  git commit 
+ 1977  git commit -m "QL2"
+ 1978  git push local master
+ 1979  nano index.html 
+ 1980  git add .
+ 1981  git commit -m "Commit"
+ 1982  git push local master
+ 1983  cd /home/fernando/Workspace/UOL/servidor/
+ 1984  ls
+ 1985  cd web/
+ 1986  ls
+ 1987  la
+ 1988  cd ..
+ 1989  cd prq
+ 1990  cd projeto/.git/hooks/
+ 1991  nano post-receive 
+ 1992  cd Workspace/UOL/Programming-courses/
+ 1993  ls
+ 1994  mkdir Curso_C
+ 1995  mv Curso_C/ Curso-C
+ 1996  ls
+ 1997  .idle
+ 1998  .java
+ 1999  .code
+ 2000  code
+ 2001  cd Workspace/UOL/Programming-courses/
+ 2002  git status
+ 2003  git branch main
+ 2004  git status
+ 2005  git add .
+ 2006  ls
+ 2007  git add *
+ 2008  git remote -v
+ 2009  git push origin main
+ 2010  git status
+ 2011  git init
+ 2012  git status
+ 2013  cd Curso-C/
+ 2014  mkdir aula01
+ 2015  cd aula01/
+ 2016  git status
+ 2017  cd ..
+ 2018  ls
+ 2019  git status
+ 2020  .sublime
+ 2021  ls
+ 2022  git status
+ 2023  git add *
+ 2024  git status
+ 2025  git commit -m "Início do Curso em C na Alura"
+ 2026  git push origin main
+ 2027  git status
+ 2028  git remote add origin https://github.com/Fernando-EngComputacao/Programming-courses.git
+ 2029  git remote -v
+ 2030  cd Curso-C/
+ 2031  ls
+ 2032  cd aula01/
+ 2033  ls
+ 2034  Jogo_random
+ 2035  ls
+ 2036  Jogo_random.c
+ 2037  gcc
+ 2038  gcc Jogo_random.c
+ 2039  gcc Jogo_random.c -o Jogo_random.out
+ 2040  ls
+ 2041  ./Jogo_random.out 
+ 2042  gcc Jogo_random.c
+ 2043  ls
+ 2044  ./Jogo_random.out 
+ 2045  gcc Jogo_random.c -o file.out
+ 2046  ls
+ 2047  rm -r Jogo_random.out 
+ 2048  ls
+ 2049  ./file.out 
+ 2050  gcc Jogo_random.c -o file.out 
+ 2051  ./file.out 
+ 2052  gcc Jogo_random.c -o file.out 
+ 2053  ./file.out 
+ 2054  gcc Jogo_random.c -o file.out 
+ 2055  ./file.out 
+ 2056  gcc Jogo_random.c -o file.out 
+ 2057  ./file.out 
+ 2058  gcc Jogo_random.c -o file.out 
+ 2059  ./file.out 
+ 2060  gcc Jogo_random.c -o file.out 
+ 2061  ./file.out 
+ 2062  gcc Jogo_random.c -o file.out 
+ 2063  ./file.out 
+ 2064  ls
+ 2065  gcc multiplicacao.c -o vezes.out
+ 2066  ./vezes.out
+ 2067  gcc multiplicacao.c -o vezes.out
+ 2068  ./vezes.out
+ 2069  gcc Jogo_random.c -o file.out 
+ 2070  gcc multiplicacao.c -o vezes.out
+ 2071  gcc Jogo_random.c -o file.out 
+ 2072  ./vezes.out
+ 2073  gcc Jogo_random.c -o file.out 
+ 2074  ./file.out 
+ 2075  gcc Jogo_random.c -o file.out 
+ 2076  ./file.out 
+ 2077  gcc Jogo_random.c -o file.out 
+ 2078  ./file.out 
+ 2079  gcc Jogo_random.c -o file.out 
+ 2080  ./file.out 
+ 2081  gcc Jogo_random.c -o file.out 
+ 2082  ./file.out 
+ 2083  gcc Jogo_random.c -o file.out 
+ 2084  ./file.out 
+ 2085  gcc Jogo_random.c -o file.out 
+ 2086  ./file.out 
+ 2087  gcc Jogo_random.c -o file.out 
+ 2088  ./file.out 
+ 2089  gcc somatorio.c -o sm.out
+ 2090  ./sm.out 
+ 2091  gcc somatorio.c -o sm.out
+ 2092  ./sm.out 
+ 2093  gcc somatorio.c -o sm.out
+ 2094  ./sm.out 
+ 2095  git status
+ 2096  git add .
+ 2097  git status
+ 2098  git commit -m "Arquivos da Aula 01"
+ 2099  git push origin main
+ 2100  git push -u origin main
+ 2101  ls
+ 2102  cd ..
+ 2103  ls
+ 2104  cd ..
+ 2105  ls
+ 2106  git status
+ 2107  git add .
+ 2108  git pull origin main
+ 2109  git push -u origin main
+ 2110  git branch
+ 2111  git checkout main
+ 2112  git push -u origin main
+ 2113  git rename local origin
+ 2114  history
