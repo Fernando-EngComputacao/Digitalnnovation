@@ -1,0 +1,1 @@
+### Programa em Python 3#### 1. Programa destinado a representar graficamente o campo elétrico de uma barra de 1 m;#### 2. Bibliotecas utilizadas foram: Numpy e Matplotlib; 
