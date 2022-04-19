@@ -7,4 +7,4 @@
 ### 6. Pasta [*Java e JDBC*] - Curso de Java e JDBC, Java e Banco de Dados: crud (Create, Read, Update e Delete);
 ### 7. Pasta [*Python 3*] - Programação em Python 3
 
-##### [Curso em vídeo](https://www.cursoemvideo.com) - [Digital Innovation One](https://www.dio.me//) - [Udemy](https://www.udemy.com/) - [Alura](alura.com.br)
+##### [Curso em vídeo](https://www.cursoemvideo.com) - [Digital Innovation One](https://www.dio.me//) - [Udemy](https://www.udemy.com/) - [Alura](https://www.alura.com.br)
