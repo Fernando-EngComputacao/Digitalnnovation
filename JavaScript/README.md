@@ -5,5 +5,5 @@
 ### 4. Pasta [*JavaScript ES6 Avançado*] - Curso de JavaScript ES6 na Digital Innovation One;
 
 ##### [Curso em vídeo](https://www.cursoemvideo.com) - [Digital Innovation One](https://www.dio.me//) - [Udemy](https://www.udemy.com/) - [Alura](https://www.alura.com.br)
-##### Validar Certificados: [jQuery Ajax - JS](dio.me/certificate/788C45D3/share)|[JavaScript ES6 Essencial](dio.me/certificate/386481E1/share)|[JavaScript]|
+##### Validar Certificados: [jQuery Ajax - JS](https://dio.me/certificate/788C45D3/share)|[JavaScript ES6 Essencial](https://dio.me/certificate/386481E1/share)
 ###### Fernando Furtado
