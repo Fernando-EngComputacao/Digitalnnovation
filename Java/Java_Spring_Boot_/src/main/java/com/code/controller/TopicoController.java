@@ -3,21 +3,25 @@ package com.code.controller;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.code.dao.TopicoDao;
 import com.code.modelo.Curso;
 import com.code.modelo.Topico;
+import com.code.repository.TopicoRepository;
 
-@Controller
+@RestController
 public class TopicoController {
+	
+	@Autowired
+	private TopicoRepository topicoRepository;
+	
 	@RequestMapping("/topico")
-	@ResponseBody
 	public List<TopicoDao> lista(){
-		Topico topico = new Topico("Dúvida", "sobre Python", new Curso("Python3","programação"));
+		List<Topico> topico = topicoRepository.findAll();
 		
-		return TopicoDao.converter(Arrays.asList(topico, topico, topico));
+		return TopicoDao.converter(topico);
 	}
 }
