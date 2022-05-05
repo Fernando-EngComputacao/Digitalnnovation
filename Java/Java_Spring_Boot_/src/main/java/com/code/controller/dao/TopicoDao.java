@@ -1,4 +1,4 @@
-package com.code.dao;
+package com.code.controller.dao;
 
 import java.time.LocalDateTime;
 import java.util.List;
