@@ -1,12 +1,17 @@
 package com.code.controller;
 
 import java.net.URI;
-import java.util.List;
 import java.util.Optional;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort.Direction;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -16,6 +21,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -39,13 +45,21 @@ public class TopicoController {
 	
 	//@RequestMapping(value = "/topico", method = RequestMethod.GET)
 	@GetMapping
-	public List<TopicoDao> lista(String nomeCurso){
-		System.out.println(nomeCurso);
+	@Cacheable(value = "listaDeTopico")
+	public Page<TopicoDao> lista(@RequestParam(required = false) String nomeCurso, 
+			@PageableDefault(sort = "id", direction =  Direction.DESC, page = 0, size = 10 ) Pageable paginacao){
+		//public Page<TopicoDao> lista(@RequestParam(required = false) String nomeCurso, 
+		//		@RequestParam int pagina, @RequestParam int qnt,
+		//		@RequestParam String ordenacao){
+		
+		//Pageable paginacao = PageRequest.of(pagina, qnt, Direction.ASC, ordenacao);
+		
+		// Para pegar dados no Postman, use: localhost:8081/topico?page=1&size=10&sort=id,asc
 		if (nomeCurso == null) {
-			List<Topico> topico = topicoRepository.findAll();
+			Page<Topico> topico = topicoRepository.findAll(paginacao);
 			return TopicoDao.converter(topico);
 		} else {
-			List<Topico> topico = topicoRepository.findByCursoNome(nomeCurso);
+			Page<Topico> topico = topicoRepository.findByCursoNome(nomeCurso, paginacao);
 			return TopicoDao.converter(topico);
 		}
 	}
@@ -53,6 +67,7 @@ public class TopicoController {
 	//@RequestMapping(value = "/topico", method = RequestMethod.POST) 
 	@PostMapping
 	@Transactional
+	@CacheEvict(value = "listaDeTopico", allEntries = true)
 	public ResponseEntity<TopicoDao> cadastrar(@RequestBody @Valid TopicoForm form, UriComponentsBuilder uriBuilder) {
 		 Topico topico = form.converter(cursoRepository);
 		 topicoRepository.save(topico); 
@@ -73,6 +88,7 @@ public class TopicoController {
 	
 	@PutMapping("/{id}")
 	@Transactional
+	@CacheEvict(value = "listaDeTopico", allEntries = true)
 	public ResponseEntity<TopicoDao> atualizar(@PathVariable Long id, @RequestBody @Valid TopicoUpdateForm form){
 		Optional<Topico> optional = topicoRepository.findById(id);
 		
@@ -86,6 +102,7 @@ public class TopicoController {
 	
 	@DeleteMapping("/{id}")
 	@Transactional
+	@CacheEvict(value = "listaDeTopico", allEntries = true)
 	public ResponseEntity<?> deletar(@PathVariable Long id ){
 		topicoRepository.deleteById(id);
 		
