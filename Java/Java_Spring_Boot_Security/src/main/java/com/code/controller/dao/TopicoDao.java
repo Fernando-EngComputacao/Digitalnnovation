@@ -1,8 +1,8 @@
 package com.code.controller.dao;
 
 import java.time.LocalDateTime;
-import java.util.List;
-import java.util.stream.Collectors;
+
+import org.springframework.data.domain.Page;
 
 import com.code.modelo.Topico;
 
@@ -40,8 +40,8 @@ public class TopicoDao {
 		return dtCricao;
 	}
 
-	public static List<TopicoDao> converter(List<Topico> topico) {
-		return topico.stream().map(TopicoDao::new).collect(Collectors.toList());
+	public static Page<TopicoDao> converter(Page<Topico> topico) {
+		return topico.map(TopicoDao::new);
 	}
 	
 	
