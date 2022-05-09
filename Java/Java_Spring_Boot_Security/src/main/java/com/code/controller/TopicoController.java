@@ -64,7 +64,8 @@ public class TopicoController {
 		}
 	}
 	
-	//@RequestMapping(value = "/topico", method = RequestMethod.POST) 
+	//@RequestMapping(value = "/topico" // method = RequestMethod.POST) 
+
 	@PostMapping
 	@Transactional
 	@CacheEvict(value = "listaDeTopico", allEntries = true)
