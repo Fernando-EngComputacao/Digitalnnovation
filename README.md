@@ -1,5 +1,5 @@
 # Código-fonte de Cursos de Programação
-### 1. Pasta [*C#*] - Curso de C# na Digital Innovation;
+### 1. Pasta [*C#*] - Cursos de C#;
 ### 2. Pasta [*JavaScript*] - Cursos de JavaScript;
 ### 3. Pasta [*Java*] - Cursos de Java;
 ### 4. Pasta [*Python 3*] - Programação em Python 3
