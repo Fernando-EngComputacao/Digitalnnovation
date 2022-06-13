@@ -15,10 +15,7 @@ namespace Movie_EF.Models
         public string Genre { get; set; }
         [Range(1,650)]
         public int Duraction { get; set; }
-<<<<<<< HEAD
-=======
         public int AgeRating { get; set; }
->>>>>>> dotnet
      
     }
 }

@@ -33,9 +33,9 @@ namespace Movie_EF
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Movie_EF", Version = "v1" });
-            });
+            }); 
             services.AddDbContext<ConfigureContext>(
-                opts => opts.UseMySQL(Configuration.GetConnectionString("MovieEPConnection"))
+                opts => opts.UseLazyLoadingProxies().UseMySQL(Configuration.GetConnectionString("MovieEPConnection"))
             );
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }

@@ -39,11 +39,7 @@ namespace Movie_EF.Controllers
         }
 
         [HttpPost]
-<<<<<<< HEAD
-        public IActionResult AddCinema([FromBody] CreateCinemaDto dto)
-=======
         public IActionResult AddCinema([FromBody] UpdateCinemaDto dto)
->>>>>>> dotnet
         {
             Cinema cinema = _mapper.Map<Cinema>(dto);
 

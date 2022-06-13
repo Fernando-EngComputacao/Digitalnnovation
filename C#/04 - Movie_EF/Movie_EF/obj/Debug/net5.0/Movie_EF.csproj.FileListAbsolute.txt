@@ -69,3 +69,5 @@ C:\Users\ferna\Workspace\eclipse-workspace\Movie_EF\Movie_EF\obj\Debug\net5.0\re
 C:\Users\ferna\Workspace\eclipse-workspace\Movie_EF\Movie_EF\obj\Debug\net5.0\Movie_EF.pdb
 C:\Users\ferna\Workspace\eclipse-workspace\Movie_EF\Movie_EF\obj\Debug\net5.0\Movie_EF.genruntimeconfig.cache
 C:\Users\ferna\Workspace\eclipse-workspace\Movie_EF\Movie_EF\obj\Debug\net5.0\ref\Movie_EF.dll
+C:\Users\ferna\Workspace\eclipse-workspace\Movie_EF\Movie_EF\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\ferna\Workspace\eclipse-workspace\Movie_EF\Movie_EF\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll

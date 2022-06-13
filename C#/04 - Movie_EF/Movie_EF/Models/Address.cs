@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Movie_EF.Models
 {
@@ -23,6 +24,8 @@ namespace Movie_EF.Models
         [Required]
         [StringLength(10)]
         public string CEP { get; set; }
+        [JsonIgnore]
+        public virtual Cinema Cinema { get; set; }
 
 
     }
