@@ -9,5 +9,10 @@ namespace Movie_EF.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
+<<<<<<< HEAD
+=======
+        public int AddressFK { get; set; }
+        public int ManagerFK { get; set; }
+>>>>>>> dotnet
     }
 }

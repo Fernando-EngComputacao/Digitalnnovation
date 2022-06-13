@@ -16,12 +16,64 @@ namespace Movie_EF.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.5");
 
+<<<<<<< HEAD
+=======
+            modelBuilder.Entity("Movie_EF.Models.Address", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("CEP")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
+
+                    b.Property<string>("Complement")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("varchar(120)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("District")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Locality")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("int");
+
+                    b.Property<string>("State")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Addresses");
+                });
+
+>>>>>>> dotnet
             modelBuilder.Entity("Movie_EF.Models.Cinema", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+<<<<<<< HEAD
+=======
+                    b.Property<int>("AddressFK")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ManagerFK")
+                        .HasColumnType("int");
+
+>>>>>>> dotnet
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
@@ -37,6 +89,12 @@ namespace Movie_EF.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+<<<<<<< HEAD
+=======
+                    b.Property<int>("AgeRating")
+                        .HasColumnType("int");
+
+>>>>>>> dotnet
                     b.Property<string>("Director")
                         .IsRequired()
                         .HasColumnType("text");

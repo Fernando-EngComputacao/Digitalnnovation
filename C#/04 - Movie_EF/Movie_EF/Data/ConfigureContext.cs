@@ -8,6 +8,10 @@ namespace Movie_EF.Data
 
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Cinema> Cinemas { get; set; }
+<<<<<<< HEAD
+=======
+        public DbSet<Address> Addresses { get; set; }
+>>>>>>> dotnet
 
         //Constructor
         public ConfigureContext(DbContextOptions<ConfigureContext> opt) : base(opt)

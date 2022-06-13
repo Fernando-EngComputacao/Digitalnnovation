@@ -33,19 +33,32 @@ namespace Movie_EF.Controllers
             Movie movie = _context.Movies.FirstOrDefault(movie => movie.Id == id);
 
             if (movie != null)
+<<<<<<< HEAD
                 return Ok(_mapper.Map<ReadCinemaDto>(movie));
+=======
+                return Ok(_mapper.Map<ReadMovieDto>(movie));
+>>>>>>> dotnet
 
             else
                 return NotFound();
         }
 
         [HttpPost]
+<<<<<<< HEAD
         public IActionResult AddMovie([FromBody] CreateMovieDto movieDto)
         {
             Movie movie = _mapper.Map<Movie>(movieDto);
 
             _context.Movies.Add(movie);
             _context.SaveChanges();
+=======
+        public IActionResult AddMovie([FromBody] UpdateMovieDto form)
+        {
+            Movie movie = _mapper.Map<Movie>(form);
+            _context.Movies.Add(movie);
+            _context.SaveChanges();
+
+>>>>>>> dotnet
             return CreatedAtAction(nameof(MovieRecover), new { Id = movie.Id }, movie);
         }
 
