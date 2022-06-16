@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferna\\Workspace\\eclipse-workspace\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {}
+    "C:\\Users\\ferna\\Workspace\\UOL\\C#\\03 - MovieAPI\\MoviesAPI\\MoviesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferna\\Workspace\\eclipse-workspace\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {
+    "C:\\Users\\ferna\\Workspace\\UOL\\C#\\03 - MovieAPI\\MoviesAPI\\MoviesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferna\\Workspace\\eclipse-workspace\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ferna\\Workspace\\UOL\\C#\\03 - MovieAPI\\MoviesAPI\\MoviesAPI.csproj",
         "projectName": "MoviesAPI",
-        "projectPath": "C:\\Users\\ferna\\Workspace\\eclipse-workspace\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "projectPath": "C:\\Users\\ferna\\Workspace\\UOL\\C#\\03 - MovieAPI\\MoviesAPI\\MoviesAPI.csproj",
         "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferna\\Workspace\\eclipse-workspace\\MoviesAPI\\MoviesAPI\\obj\\",
+        "outputPath": "C:\\Users\\ferna\\Workspace\\UOL\\C#\\03 - MovieAPI\\MoviesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",

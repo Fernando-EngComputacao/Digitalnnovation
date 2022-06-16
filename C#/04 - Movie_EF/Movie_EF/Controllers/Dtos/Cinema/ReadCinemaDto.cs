@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Movie_EF.Models;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Movie_EF.Controllers.Dtos
@@ -7,18 +8,11 @@ namespace Movie_EF.Controllers.Dtos
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+        public int Id { get; set; } 
         [Required]
         public string Name { get; set; }
-        public object Address { get; set; }
-        public DateTime HourSearch { get; set; }
-
-        //Constructors
-        public ReadCinemaDto(string name)
-        {
-            this.Name = name;
-            this.HourSearch = DateTime.Now;
-        }
-        public ReadCinemaDto() {}
+        public Models.Manager Manager { get; set; }
+        public Address Address { get; set; }
+        public DateTime HourSearch { get; set; } = DateTime.Now;
     }
 }

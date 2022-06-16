@@ -8,8 +8,8 @@ using Movie_EF.Data;
 namespace Movie_EF.Migrations
 {
     [DbContext(typeof(ConfigureContext))]
-    [Migration("20220613212755_Atualização Cinema-Address")]
-    partial class AtualizaçãoCinemaAddress
+    [Migration("20220615230014_Add relation between Manager and Cinema")]
+    partial class AddrelationbetweenManagerandCinema
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -73,6 +73,9 @@ namespace Movie_EF.Migrations
                     b.Property<int>("ManagerFK")
                         .HasColumnType("int");
 
+                    b.Property<int>("ManagerId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
@@ -82,7 +85,26 @@ namespace Movie_EF.Migrations
                     b.HasIndex("AddressId")
                         .IsUnique();
 
+                    b.HasIndex("ManagerId");
+
                     b.ToTable("Cinemas");
+                });
+
+            modelBuilder.Entity("Movie_EF.Models.Manager", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Managers");
                 });
 
             modelBuilder.Entity("Movie_EF.Models.Movie", b =>
@@ -122,12 +144,25 @@ namespace Movie_EF.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Movie_EF.Models.Manager", "Manager")
+                        .WithMany("Cinemas")
+                        .HasForeignKey("ManagerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Address");
+
+                    b.Navigation("Manager");
                 });
 
             modelBuilder.Entity("Movie_EF.Models.Address", b =>
                 {
                     b.Navigation("Cinema");
+                });
+
+            modelBuilder.Entity("Movie_EF.Models.Manager", b =>
+                {
+                    b.Navigation("Cinemas");
                 });
 #pragma warning restore 612, 618
         }

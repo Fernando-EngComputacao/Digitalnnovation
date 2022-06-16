@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Movie_EF.Models
 {
@@ -16,6 +18,8 @@ namespace Movie_EF.Models
         [Range(1,650)]
         public int Duraction { get; set; }
         public int AgeRating { get; set; }
+        [JsonIgnore]
+        public virtual List<Session> Sessions { get; set; }
      
     }
 }

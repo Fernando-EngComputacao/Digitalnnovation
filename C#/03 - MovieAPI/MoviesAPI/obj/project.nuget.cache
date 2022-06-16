@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pi6SEMJprqjoogbjEWDW1RhATJ8LdlcUlTz671ztC2jqqjr413hhABSunsc8RIhvdkinhX7e2LxYVGRBGTKyug==",
+  "dgSpecHash": "evlbY1cS/VE8DbeYf+xZAnWENnBApmwa2udmtZUjoqzDmt17fGc3dCDsn8sVsNIl7+WlGZxmWQQQJWW3h+C/EA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ferna\\Workspace\\eclipse-workspace\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+  "projectFilePath": "C:\\Users\\ferna\\Workspace\\UOL\\C#\\03 - MovieAPI\\MoviesAPI\\MoviesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ferna\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

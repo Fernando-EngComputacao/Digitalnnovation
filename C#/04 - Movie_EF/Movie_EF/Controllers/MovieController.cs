@@ -39,6 +39,21 @@ namespace Movie_EF.Controllers
                 return NotFound();
         }
 
+        [HttpGet("search/")]
+        public IActionResult MovieSearch([FromQuery] int? ageRating = null)
+        {
+            List<Movie> movies = _context.Movies.Where(movie => movie.AgeRating <= ageRating).ToList();
+
+            if (ageRating == null)
+                movies = _context.Movies.ToList();
+
+            if (movies == null)
+                return NotFound();
+
+            List<ReadMovieDto> dto = _mapper.Map<List<ReadMovieDto>>(movies);
+            return Ok(dto);
+        }
+
         [HttpPost]
         public IActionResult AddMovie([FromBody] UpdateMovieDto form)
         {

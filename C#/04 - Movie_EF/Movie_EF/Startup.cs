@@ -32,7 +32,7 @@ namespace Movie_EF
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Movie_EF", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Movie_EF", Version = "v2" });
             }); 
             services.AddDbContext<ConfigureContext>(
                 opts => opts.UseLazyLoadingProxies().UseMySQL(Configuration.GetConnectionString("MovieEPConnection"))
@@ -47,7 +47,8 @@ namespace Movie_EF
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Movie_EF v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Movie_EF v2"));
+                
             }
 
             app.UseHttpsRedirection();

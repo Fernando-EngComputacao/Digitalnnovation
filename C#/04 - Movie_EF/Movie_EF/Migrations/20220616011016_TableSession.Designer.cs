@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Movie_EF.Data;
 
 namespace Movie_EF.Migrations
 {
     [DbContext(typeof(ConfigureContext))]
-    partial class ConfigureContextModelSnapshot : ModelSnapshot
+    [Migration("20220616011016_TableSession")]
+    partial class TableSession
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
