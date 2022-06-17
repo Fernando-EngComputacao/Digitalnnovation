@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
@@ -11,7 +11,6 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": false,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -19,13 +18,21 @@
     },
     "MovieAPI_Entity": {
       "commandName": "Project",
-      "dotnetRunMessages": "true",
-      "launchBrowser": false,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:2021;http://localhost:2020",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "https://localhost:2021;http://localhost:2020",
+      "dotnetRunMessages": "true"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "launchUrl": "https://localhost:2021/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://localhost:2021;http://localhost:2020"
+      },
+      "distributionName": ""
     }
   }
 }
