@@ -33,8 +33,11 @@ namespace UserAPI
 
             services.AddDbContext<UserDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("UserConnection")));
             services
-                .AddIdentity<IdentityUser<int>, IdentityRole<int>>()
-                .AddEntityFrameworkStores<UserDbContext>();
+                .AddIdentity<IdentityUser<int>, IdentityRole<int>>(
+                    opt => opt.SignIn.RequireConfirmedEmail = true   
+                 )
+                .AddEntityFrameworkStores<UserDbContext>()
+                .AddDefaultTokenProviders();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -44,6 +47,8 @@ namespace UserAPI
             //Services
             services.AddScoped<UserService, UserService>();
             services.AddScoped<LoginService, LoginService>();
+            services.AddScoped<LogoutService, LogoutService>();
+            services.AddScoped<TokenService, TokenService>();
             //Configura propriedades de UperCase E Alphanumeric ao cadastrar a senha para o usuário
             services.Configure<IdentityOptions>(options =>
             {

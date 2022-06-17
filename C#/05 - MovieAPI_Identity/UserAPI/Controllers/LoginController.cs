@@ -23,8 +23,8 @@ namespace UserAPI.Controllers
         public IActionResult UserLogin(LoginRequest request)
         {
             Result result = _loginService.UserLogin(request);
-            if (result.IsFailed) return Unauthorized();
-            return Ok("Login efetuado com sucesso!!!");
+            if (result.IsFailed) return Unauthorized(result.Errors);
+            return Ok(result.Successes);
         }
     }
 }

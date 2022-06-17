@@ -3,6 +3,7 @@ using FluentResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using UserAPI.Controllers.Dtos.User;
+using UserAPI.Controllers.Requests;
 using UserAPI.Data;
 using UserAPI.Services;
 
@@ -13,12 +14,10 @@ namespace UserAPI.Controllers
     public class RegistrationController : ControllerBase
     {
         private UserService _userService;
-        private IMapper _mapper;
 
-        public RegistrationController(UserService userService, IMapper mapper)
+        public RegistrationController(UserService userService)
         {
             this._userService = userService;
-            this._mapper = mapper;
         }
 
         [HttpGet]
@@ -34,7 +33,14 @@ namespace UserAPI.Controllers
         {
             Result result = _userService.UserRegistration(form);
             if (result.IsFailed) return StatusCode(500);
-            return Ok(_mapper.Map<ReadUserDto>(form));
+            return Ok(result.Successes);
+        }
+        [HttpPost("active/")]
+        public IActionResult ActiveLoginUser(ActiveAccountRequest request)
+        {
+            Result result = _userService.ActiveLoginUser(request);
+            if (result.IsFailed) return StatusCode(500);
+            return Ok(result.Successes);
         }
     }
 }
