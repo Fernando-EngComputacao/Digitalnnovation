@@ -43,6 +43,7 @@ namespace UserAPI
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             //Services
             services.AddScoped<UserService, UserService>();
+            services.AddScoped<LoginService, LoginService>();
             //Configura propriedades de UperCase E Alphanumeric ao cadastrar a senha para o usuário
             services.Configure<IdentityOptions>(options =>
             {
