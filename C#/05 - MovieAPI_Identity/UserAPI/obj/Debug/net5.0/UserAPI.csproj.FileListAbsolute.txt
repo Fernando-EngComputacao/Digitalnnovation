@@ -77,3 +77,5 @@ C:\Users\ferna\Workspace\eclipse-workspace\MovieAPI_Entity\UserAPI\obj\Debug\net
 C:\Users\ferna\Workspace\eclipse-workspace\MovieAPI_Entity\UserAPI\obj\Debug\net5.0\UserAPI.pdb
 C:\Users\ferna\Workspace\eclipse-workspace\MovieAPI_Entity\UserAPI\obj\Debug\net5.0\UserAPI.genruntimeconfig.cache
 C:\Users\ferna\Workspace\eclipse-workspace\MovieAPI_Entity\UserAPI\obj\Debug\net5.0\ref\UserAPI.dll
+C:\Users\ferna\Workspace\eclipse-workspace\MovieAPI_Entity\UserAPI\bin\Debug\net5.0\MailKit.dll
+C:\Users\ferna\Workspace\eclipse-workspace\MovieAPI_Entity\UserAPI\bin\Debug\net5.0\MimeKit.dll

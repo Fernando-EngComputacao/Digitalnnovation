@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 using UserAPI.Controllers.Dtos.User;
 using UserAPI.Controllers.Requests;
 using UserAPI.Data;
@@ -42,12 +43,13 @@ namespace UserAPI.Services
             if (resultadoIdentity.Result.Succeeded)
             {
                 var code = _userManager.GenerateEmailConfirmationTokenAsync(userIdentity).Result;
+                var encodedCode = HttpUtility.UrlEncode(code);
                 _dbContext.Users.Add(user);
                 _dbContext.SaveChanges();
-                _emailService.SendEmail(
-                    new[] {userIdentity.Email}, "Link to Activate", userIdentity.Id, code
-                );
-                return Result.Ok().WithSuccess(code);
+                //_emailService.SendEmail(
+                //    new[] {userIdentity.Email}, "Link to Activate", userIdentity.Id, code
+                //);
+                return Result.Ok().WithSuccess(encodedCode);
             }
             return Result.Fail("Falha ao cadastrar usuário");
 

@@ -35,8 +35,8 @@ namespace UserAPI.Controllers
             if (result.IsFailed) return StatusCode(500);
             return Ok(result.Successes);
         }
-        [HttpPost("active/")]
-        public IActionResult ActiveLoginUser(ActiveAccountRequest request)
+        [HttpGet("active/")]
+        public IActionResult ActiveLoginUser([FromQuery] ActiveAccountRequest request)
         {
             Result result = _userService.ActiveLoginUser(request);
             if (result.IsFailed) return StatusCode(500);

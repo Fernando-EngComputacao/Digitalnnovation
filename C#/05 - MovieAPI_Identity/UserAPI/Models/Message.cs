@@ -16,7 +16,7 @@ namespace UserAPI.Models
             Content = $"https://localhost:3031/Registration/active" + url;
             Subject = subject;
             Addressee = new List<MailboxAddress>();
-            Addressee.AddRange(addressee.Select(d => new MailboxAddress(d))); 
+            Addressee.AddRange(addressee.Select(d => new MailboxAddress(d)));
         }
 
         //Constructor
