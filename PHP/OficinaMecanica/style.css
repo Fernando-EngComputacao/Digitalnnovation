@@ -1,0 +1,82 @@
+/*=========== RESET ===========*/
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Lato', sans-serif;}
+
+body, html{ height: 100%; max-height: 100% !important; width: 100%;}
+
+a{text-decoration: none;}
+
+ul{list-style: none;}
+
+img{max-width: 100%;}
+/* CABEÇALHO */
+.cabecalho{width: 100% !important; height: 20vh !important; float: left; padding: 3% 4%; background: linear-gradient(to bottom,white, #f2f2f2); border-bottom: 2px solid #d9d9d9;}
+.logo{width: 33%; height: auto; float: left; margin-top: 3%;}
+.btn-menu{ width: 20%; height: auto; float: right; text-align: center; color: #fff; border-radius: 56px; cursor: pointer; background: linear-gradient(to right,#76e1fc, #1812ba); margin-top: 5%;}
+/* MENU */
+.menu{display: none; width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.9); top: 0; left: 0;}
+.btn-close{font-size: 1.5em; color: #fff; float: right; cursor: pointer; margin: 2% 3% 0 0;}
+.menu ul{width: 100%; float: left; text-align: center;}
+.menu li{padding: 3%}
+.menu li a{font-size: 2em; color: #fff; padding: 1.5% 3%;}
+.menu li a:hover{border: 3px solid blue;}
+
+#divisao{
+	float: right;
+	position: static;
+	margin-top: 0%;
+	width: 100%;
+	height: 80vh !important;
+	max-height: 80vh !important;
+	box-sizing: border-box;
+
+	}
+#iframe{
+	float: right;
+	position: static;
+	width: 100%;
+	height: 80vh !important;
+	max-height: 80vh !important;
+	box-sizing: border-box;
+
+	}
+@media screen and (max-width: 450px){
+	#iframe{height: 70.9vh !important}
+	#divisao{height: 70.9vh !important}
+}
+
+@media screen and (min-width: 480px){
+	.logo{width: 20%; height: auto; float: left; margin-top: 4%;}
+	.btn-menu{ width: 20%; height: auto; float: right; text-align: center; color: #fff; border-radius: 56px; cursor: pointer; background: linear-gradient(to right,#76e1fc, #1812ba); margin-top: 4%;}
+	/* .btn{font-size: 2em;} */
+	}
+
+@media screen and (min-width: 580px){
+}
+/* SMALL DEVICES TABLETS */
+
+@media screen and (min-width: 600px){
+	.logo{width: 18% !important; height: auto; float: left; margin-top: 0 !important;}
+	.btn-menu{display: none;}
+	.btn-close{display: none;}
+	.menu{width: auto; height: 56px; line-height: 56px; float: right; background-color: rgba(0,0,0,0); display: block !important; position: static}
+	.menu li{padding: 0; float: left;}
+	.menu li a{color: blue; font-size: 20px; padding: 15px;}
+	.menu li a:hover{border-style: none; color: orange; font-size: 18.5px; font-weight: bold;}
+}
+
+/* Medium DEVICES TABLETS & DESKTOPS */
+@media screen and (min-width: 800px){
+	.logo{width: 12% !important; height: auto; float: left; margin-top: -2% !important;}
+
+	.btn-menu{ width: 8%; height: auto; float: right; text-align: center; color: #fff; border-radius: 56px; cursor: pointer; background: linear-gradient(to right,#76e1fc, #1812ba); margin-top: 1%;}
+
+}
+@media screen and (min-width: 680px){
+	.logo{width: 15%; height: auto; float: left; margin-top: -1%;}
+	.btn-menu{ width: 15%; height: auto; float: right; text-align: center; color: #fff; border-radius: 56px; cursor: pointer; background: linear-gradient(to right,#76e1fc, #1812ba); margin-top: 1%;}
+
+
+}
+
+
+
