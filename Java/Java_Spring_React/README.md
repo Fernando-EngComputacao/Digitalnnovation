@@ -4,6 +4,6 @@
 ###### 1. React: Toast - Axios - UseEffect
 ###### 2. Java Spring Boot API REST: Verbos HTTP - Twilio SMS - JPA - H2 
 
-[Acesse aqui](https://www.starbuy-furtado.netlify.app)
+Acesse o site clicando [aqui](https://starbuy-furtado.netlify.app/)
 
 ##### Autor: Fernando Furtado :boy:
