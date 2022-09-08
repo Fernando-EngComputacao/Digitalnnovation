@@ -29,6 +29,31 @@ Projeto desenvolvido em TypeScript utilizando o framework NestJS. Nele foi desen
 
 ### Dados do Projeto 📚
 Projeto baseado na ideia de uma livaria, no qual é possível buscar todos os livros, e um livro em específico pelo ID. Também, nele é possível inserir livros, alterar os dados dos livros e deletar.
+
+### Código inserido 
+
+    ```
+
+    @Module({
+    imports: [
+        ConfigModule.forRoot(),
+        SequelizeModule.forRoot({
+        dialect: 'mysql',
+        host: 'localhost',
+        port: 3306,
+        username: process.env.USER_BD,
+        password: process.env.PASSWORD_BD,
+        database: 'bookstore',
+        autoLoadModels: true,
+        synchronize: true,
+        }),
+        SequelizeModule.forFeature([Book]),
+    ],
+    controllers: [BookController],
+    providers: [BookService],
+    })
+
+    ```
     
 ### Autor do Projeto ✨  
 ✔️ [@Fernando Furtado](https://www.github.com/Fernando-EngComputacao) 
